@@ -1,0 +1,167 @@
+[
+    {
+        "id": "1",
+        "Nombre": "Grupo A",
+        "Maestro": {
+            "id": "1",
+            "nombre": "Roberto",
+            "apellido": "G\u00f3mez",
+            "edad": "45",
+            "especialidad": "Matem\u00e1ticas",
+            "lista": null,
+            "es_lista": false
+        },
+        "Alumnos": [
+            {
+                "id": "1",
+                "nombre": "Juan",
+                "apellido": "P\u00e9rez",
+                "edad": "20",
+                "matricula": "A12345",
+                "lista": null,
+                "es_lista": false
+            },
+            {
+                "id": "2",
+                "nombre": "Mar\u00eda",
+                "apellido": "Gonz\u00e1lez",
+                "edad": "21",
+                "matricula": "A12346",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "Nombre": "Grupo B",
+        "Maestro": {
+            "id": "2",
+            "nombre": "Elena",
+            "apellido": "V\u00e1zquez",
+            "edad": "38",
+            "especialidad": "F\u00edsica",
+            "lista": null,
+            "es_lista": false
+        },
+        "Alumnos": [
+            {
+                "id": "3",
+                "nombre": "Carlos",
+                "apellido": "Rodr\u00edguez",
+                "edad": "19",
+                "matricula": "A12347",
+                "lista": null,
+                "es_lista": false
+            },
+            {
+                "id": "4",
+                "nombre": "Ana",
+                "apellido": "Mart\u00ednez",
+                "edad": "22",
+                "matricula": "A12348",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "Nombre": "Grupo C",
+        "Maestro": {
+            "id": "3",
+            "nombre": "Jorge",
+            "apellido": "Hern\u00e1ndez",
+            "edad": "42",
+            "especialidad": "Programaci\u00f3n",
+            "lista": null,
+            "es_lista": false
+        },
+        "Alumnos": [
+            {
+                "id": "5",
+                "nombre": "Luis",
+                "apellido": "S\u00e1nchez",
+                "edad": "20",
+                "matricula": "A12349",
+                "lista": null,
+                "es_lista": false
+            },
+            {
+                "id": "6",
+                "nombre": "Laura",
+                "apellido": "D\u00edaz",
+                "edad": "21",
+                "matricula": "A12350",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "Nombre": "Grupo D",
+        "Maestro": {
+            "id": "4",
+            "nombre": "Luc\u00eda",
+            "apellido": "Morales",
+            "edad": "39",
+            "especialidad": "Base de Datos",
+            "lista": null,
+            "es_lista": false
+        },
+        "Alumnos": [
+            {
+                "id": "7",
+                "nombre": "Pedro",
+                "apellido": "Ram\u00edrez",
+                "edad": "19",
+                "matricula": "A12351",
+                "lista": null,
+                "es_lista": false
+            },
+            {
+                "id": "8",
+                "nombre": "Sof\u00eda",
+                "apellido": "Torres",
+                "edad": "22",
+                "matricula": "A12352",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "Nombre": "Grupo E",
+        "Maestro": {
+            "id": "5",
+            "nombre": "Javier",
+            "apellido": "Castro",
+            "edad": "47",
+            "especialidad": "Redes",
+            "lista": null,
+            "es_lista": false
+        },
+        "Alumnos": [
+            {
+                "id": "9",
+                "nombre": "Miguel",
+                "apellido": "Fern\u00e1ndez",
+                "edad": "20",
+                "matricula": "A12353",
+                "lista": null,
+                "es_lista": false
+            },
+            {
+                "id": "10",
+                "nombre": "Carmen",
+                "apellido": "L\u00f3pez",
+                "edad": "21",
+                "matricula": "A12354",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "id": "1",
+        "nombre": "Carlos",
+        "apellido": "S\u00e1nchez",
+        "edad": 35,
+        "especialidad": "Matem\u00e1ticas",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "2",
+        "nombre": "Ana",
+        "apellido": "G\u00f3mez",
+        "edad": 30,
+        "especialidad": "F\u00edsica",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "3",
+        "nombre": "Luis",
+        "apellido": "Mart\u00ednez",
+        "edad": 40,
+        "especialidad": "Qu\u00edmica",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "4",
+        "nombre": "sebas",
+        "apellido": "rodriguez",
+        "edad": "22",
+        "especialidad": "programacion",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "5",
+        "nombre": "pene",
+        "apellido": "duro",
+        "edad": "22",
+        "especialidad": "mecanica",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "juanito",
+        "nombre": "rodriguez",
+        "apellido": "50",
+        "edad": "progra",
+        "especialidad": "progra",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "10",
+        "nombre": "pedro",
+        "apellido": "martinez",
+        "edad": "40",
+        "especialidad": "progra",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "100",
+        "nombre": "juanito",
+        "apellido": "perez",
+        "edad": "20",
+        "especialidad": "preogra",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "200",
+        "nombre": "pedro",
+        "apellido": "pascal",
+        "edad": "24",
+        "especialidad": "progra",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "123",
+        "nombre": "pedro",
+        "apellido": "martinez",
+        "edad": "50",
+        "especialidad": "programacion",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "2500",
+        "nombre": "pedro",
+        "apellido": "rodriguez",
+        "edad": "50",
+        "especialidad": "progra",
+        "lista": null,
+        "es_lista": false
+    }
+]

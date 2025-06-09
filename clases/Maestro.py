@@ -30,3 +30,4 @@ if __name__ == "__main__":
     maestros.agregar(maestro2)
     maestros.agregar(maestro3)
     maestros.mostrar_uno(3)
+    maestros.exportar("registros/maestros.json")

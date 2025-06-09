@@ -25,5 +25,77 @@
         "matricula": "789012",
         "lista": null,
         "es_lista": false
+    },
+    {
+        "id": "12",
+        "nombre": "sebas",
+        "apellido": "rodirugez",
+        "edad": "22",
+        "matricula": "1234",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "10",
+        "nombre": "sebas",
+        "apellido": "jotito",
+        "edad": "23",
+        "matricula": "22013123",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "1",
+        "nombre": "sebas",
+        "apellido": "joro",
+        "edad": "22",
+        "matricula": "123",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "2",
+        "nombre": "juan",
+        "apellido": "perro",
+        "edad": "22",
+        "matricula": "123456",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "juanito",
+        "nombre": "juanito",
+        "apellido": "perro",
+        "edad": "22",
+        "matricula": "12345",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "pepe",
+        "nombre": "pepe",
+        "apellido": "pepe",
+        "edad": "12345",
+        "matricula": "123456",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "100",
+        "nombre": "sebas",
+        "apellido": "joto",
+        "edad": "22",
+        "matricula": "12345",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "2000",
+        "nombre": "juanito",
+        "apellido": "perez",
+        "edad": "22",
+        "matricula": "123456789",
+        "lista": null,
+        "es_lista": false
     }
 ]

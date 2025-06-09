@@ -3,7 +3,7 @@ from .Lista import Lista
 class Alumno(Lista):
     def __init__(self,id = None, nombre=None, apellido=None, edad=None, matricula=None):
 
-        if nombre and apellido and edad and matricula and id:
+        if nombre is not None and apellido is not None and edad is not None and matricula is not None and id is not None:
             self.id = id
             self.nombre = nombre
             self.apellido = apellido
