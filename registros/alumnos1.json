@@ -97,5 +97,13 @@
         "matricula": "123456789",
         "lista": null,
         "es_lista": false
-    }
-]
+    },
+    {
+        "id": "88",
+        "nombre": "sebos",
+        "apellido": "juanos",
+        "edad": "24",
+        "matricula": "222334",
+        "lista": null,
+        "es_lista": false,
+        "_id": 

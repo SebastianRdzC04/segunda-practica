@@ -1,0 +1,12 @@
+[
+    {
+        "type": "insert",
+        "data": {
+            "id": "200",
+            "nombre": "sebitas",
+            "apellido": "rodriguez",
+            "edad": "22",
+            "matricula": "123456"
+        }
+    }
+]

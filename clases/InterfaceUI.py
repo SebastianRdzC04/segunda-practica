@@ -1,9 +1,11 @@
 from clases.Lista import Lista
 import inspect
+from db.session import MongoSession
 
 class InterfaceUI:
     def __init__(self):
         self.data = Lista()
+        self.session = MongoSession()
 
 
     def crear(self):
@@ -24,6 +26,7 @@ class InterfaceUI:
         else:
             print(f"registro {nuevo.nombre} creado y guardado.")
             self.data.exportar()
+            self.session.exportar(self.data.__class__.__name__.lower(), nuevo.convertir_a_diccionario())
             return nuevo
 
     def leer(self):
