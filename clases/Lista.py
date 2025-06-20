@@ -65,9 +65,16 @@ class Lista:
         if self.ruta is None and ruta is None:
             return False
 
+        datos = []
+        
+        for alumno in self.lista:
+            d = alumno.convertir_a_diccionario()
+            if '_id' in d:
+                del d['_id']
+            datos.append(d)
         with open(self.ruta, 'w') as file:
             import json
-            json.dump(self.convertir_a_diccionario(), file, indent=4)
+            json.dump(datos, file, indent=4, ensure_ascii=False)
         return True
 
 

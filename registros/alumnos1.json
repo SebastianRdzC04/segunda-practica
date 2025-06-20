@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nombre": "Juan",
-        "apellido": "P\u00e9rez",
+        "apellido": "Pérez",
         "edad": 20,
         "matricula": "123456",
         "lista": null,
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "nombre": "Ana",
-        "apellido": "G\u00f3mez",
+        "apellido": "Gómez",
         "edad": 22,
         "matricula": "654321",
         "lista": null,
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "nombre": "Luis",
-        "apellido": "Mart\u00ednez",
+        "apellido": "Martínez",
         "edad": 21,
         "matricula": "789012",
         "lista": null,
@@ -99,11 +99,93 @@
         "es_lista": false
     },
     {
-        "id": "88",
-        "nombre": "sebos",
-        "apellido": "juanos",
-        "edad": "24",
-        "matricula": "222334",
+        "id": "33",
+        "nombre": "jesus",
+        "apellido": "beto villa",
+        "edad": "34",
+        "matricula": "24190089",
         "lista": null,
-        "es_lista": false,
-        "_id": 
+        "es_lista": false
+    },
+    {
+        "id": "38",
+        "nombre": "juano",
+        "apellido": "rodriguez",
+        "edad": "23",
+        "matricula": "24657687",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "40",
+        "nombre": "rodrigo",
+        "apellido": "rodriguez",
+        "edad": "12",
+        "matricula": "29304657",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "41",
+        "nombre": "jesjs",
+        "apellido": "avlber",
+        "edad": "23",
+        "matricula": "23427890",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "44",
+        "nombre": "pedro",
+        "apellido": "pepo",
+        "edad": "34",
+        "matricula": "23545243",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "23",
+        "nombre": "juana",
+        "apellido": "juares",
+        "edad": "23",
+        "matricula": "37847890",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "51",
+        "nombre": "yo",
+        "apellido": "seaba",
+        "edad": "43",
+        "matricula": "736483",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "52",
+        "nombre": "pruebacion2",
+        "apellido": "pruebada3",
+        "edad": "35",
+        "matricula": "73649835",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "54",
+        "nombre": "tester",
+        "apellido": "pruebabug",
+        "edad": "44",
+        "matricula": "46574834",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "55",
+        "nombre": "sebastian",
+        "apellido": "rodriguez",
+        "edad": "24",
+        "matricula": "23423434",
+        "lista": null,
+        "es_lista": false
+    }
+]
