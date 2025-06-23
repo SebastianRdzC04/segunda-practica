@@ -2,27 +2,27 @@
     {
         "id": "1",
         "nombre": "Carlos",
-        "apellido": "S\u00e1nchez",
+        "apellido": "Sánchez",
         "edad": 35,
-        "especialidad": "Matem\u00e1ticas",
+        "especialidad": "Matemáticas",
         "lista": null,
         "es_lista": false
     },
     {
         "id": "2",
         "nombre": "Ana",
-        "apellido": "G\u00f3mez",
+        "apellido": "Gómez",
         "edad": 30,
-        "especialidad": "F\u00edsica",
+        "especialidad": "Física",
         "lista": null,
         "es_lista": false
     },
     {
         "id": "3",
         "nombre": "Luis",
-        "apellido": "Mart\u00ednez",
+        "apellido": "Martínez",
         "edad": 40,
-        "especialidad": "Qu\u00edmica",
+        "especialidad": "Química",
         "lista": null,
         "es_lista": false
     },
@@ -95,6 +95,87 @@
         "apellido": "rodriguez",
         "edad": "50",
         "especialidad": "progra",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "98",
+        "nombre": "juana",
+        "apellido": "juanares",
+        "edad": "34",
+        "especialidad": "camioneras",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "61",
+        "nombre": "rene",
+        "apellido": "flores",
+        "edad": "45",
+        "especialidad": "bailarin",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "67",
+        "nombre": "ramirino",
+        "apellido": "capuchino",
+        "edad": "43",
+        "especialidad": "programador",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "34",
+        "nombre": "marentes",
+        "apellido": "pereira",
+        "edad": "87",
+        "especialidad": "camionero",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "54",
+        "nombre": "juana",
+        "apellido": "juanero",
+        "edad": "54",
+        "especialidad": "tilinero",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "102",
+        "nombre": "que bien",
+        "apellido": "juana",
+        "edad": "75",
+        "especialidad": "nose",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "103",
+        "nombre": "prueba",
+        "apellido": "funcional",
+        "edad": "34",
+        "especialidad": "nose",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "104",
+        "nombre": "roberto",
+        "apellido": "gomez",
+        "edad": "63",
+        "especialidad": "teatro",
+        "lista": null,
+        "es_lista": false
+    },
+    {
+        "id": "75",
+        "nombre": "pedro",
+        "apellido": "picapiedra",
+        "edad": "23",
+        "especialidad": "rocas",
         "lista": null,
         "es_lista": false
     }

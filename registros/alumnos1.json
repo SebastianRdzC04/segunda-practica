@@ -187,5 +187,14 @@
         "matricula": "23423434",
         "lista": null,
         "es_lista": false
+    },
+    {
+        "id": "70",
+        "nombre": "prueba",
+        "apellido": "funcionamiento",
+        "edad": "53",
+        "matricula": "37485933",
+        "lista": null,
+        "es_lista": false
     }
 ]

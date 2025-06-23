@@ -3,15 +3,19 @@ from .InterfaceUIAlumno import InterfaceUIAlumno
 from.Maestro import Maestro
 from .Alumno import Alumno
 from .InterfaceUIMaestro import InterfaceUIMaestro
+from db.session import MongoSession
+
 
 
 class InterfaceUIGrupo:
     def __init__(self, grupos=None):
+        self.session = MongoSession()
         if grupos:
             self.grupos = grupos
         else:
             self.grupos = Grupo()
             self.grupos.importar("registros/grupos.json")
+            print(self.grupos.convertir_a_diccionario())
         self.interfaceMaestro = InterfaceUIMaestro()
 
     def crear(self):
@@ -48,11 +52,13 @@ class InterfaceUIGrupo:
             return None
         else:
             print(f"Grupo {grupo.Nombre} creado y guardado.")
+            print(f"GRUPOS AL CREARLO {self.grupos}") 
             self.grupos.exportar()
+            self.session.exportar("grupo", grupo.convertir_a_diccionario())
             return grupo
     def leer(self):
         print("Leer un grupo")
-        nombre = input("Ingrese el nombre del grupo: ")
+        nombre = input("Ingrese el Id del grupo: ")
         grupo = self.grupos.mostrar_uno(nombre)
         if grupo:
             print(f"Grupo: {grupo.Nombre} (ID: {grupo.id})")
@@ -68,7 +74,6 @@ class InterfaceUIGrupo:
                     print(f"  {i}. {alumno.nombre} {alumno.apellido}")
             else:
                 print("No hay alumnos registrados")
-                
             return grupo
         else:
             print(f"No se encontró un grupo con nombre {nombre}.")

@@ -57,6 +57,17 @@ class Lista:
                                 setattr(item, key, value)
                     return True
         return False
+    
+    ## funcion utilitaria para limpiar los ids de un objeto o lista de objetos
+    @staticmethod
+    def limpiar_ids(obj):
+        if isinstance(obj, dict):
+            obj = {k: Lista.limpiar_ids(v) for k, v in obj.items() if k != '_id'}
+            return obj
+        elif isinstance(obj, list):
+            return [Lista.limpiar_ids(item) for item in obj]
+        else:
+            return obj
 
     def exportar(self, ruta=None):
         if ruta:
@@ -66,11 +77,9 @@ class Lista:
             return False
 
         datos = []
-        
-        for alumno in self.lista:
-            d = alumno.convertir_a_diccionario()
-            if '_id' in d:
-                del d['_id']
+        for item in self.lista:
+            d = item.convertir_a_diccionario()
+            d = Lista.limpiar_ids(d)  # <--- Limpia todos los _id recursivamente
             datos.append(d)
         with open(self.ruta, 'w') as file:
             import json
@@ -82,11 +91,15 @@ class Lista:
         if self.es_lista:
             self.lista = []
             for item in data:
-                if 'lista' in item:
-                    del item['lista']
-                if 'es_lista' in item:
-                    del item['es_lista']
-                self.lista.append(self.__class__(**item))
+                if isinstance(item, dict):
+                    if 'lista' in item:
+                        del item['lista']
+                    if 'es_lista' in item:
+                        del item['es_lista']
+                    self.lista.append(self.__class__(**item))
+                else:
+                    # Si no es dict, puedes ignorarlo o lanzar un warning
+                    print(f"Advertencia: elemento inesperado en la lista: {item}")
         else:
             for key, value in data.items():
                 if key == 'lista' or key == 'es_lista':

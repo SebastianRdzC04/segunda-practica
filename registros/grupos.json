@@ -3,19 +3,20 @@
         "id": "1",
         "Nombre": "Grupo A",
         "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
             "id": "1",
             "nombre": "Roberto",
-            "apellido": "G\u00f3mez",
+            "apellido": "G�mez",
             "edad": "45",
-            "especialidad": "Matem\u00e1ticas",
-            "lista": null,
-            "es_lista": false
+            "especialidad": "Matem�ticas"
         },
         "Alumnos": [
             {
                 "id": "1",
                 "nombre": "Juan",
-                "apellido": "P\u00e9rez",
+                "apellido": "P�rez",
                 "edad": "20",
                 "matricula": "A12345",
                 "lista": null,
@@ -23,8 +24,8 @@
             },
             {
                 "id": "2",
-                "nombre": "Mar\u00eda",
-                "apellido": "Gonz\u00e1lez",
+                "nombre": "Mar�a",
+                "apellido": "Gonz�lez",
                 "edad": "21",
                 "matricula": "A12346",
                 "lista": null,
@@ -36,19 +37,20 @@
         "id": "2",
         "Nombre": "Grupo B",
         "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
             "id": "2",
             "nombre": "Elena",
-            "apellido": "V\u00e1zquez",
+            "apellido": "V�zquez",
             "edad": "38",
-            "especialidad": "F\u00edsica",
-            "lista": null,
-            "es_lista": false
+            "especialidad": "F�sica"
         },
         "Alumnos": [
             {
                 "id": "3",
                 "nombre": "Carlos",
-                "apellido": "Rodr\u00edguez",
+                "apellido": "Rodr�guez",
                 "edad": "19",
                 "matricula": "A12347",
                 "lista": null,
@@ -57,7 +59,7 @@
             {
                 "id": "4",
                 "nombre": "Ana",
-                "apellido": "Mart\u00ednez",
+                "apellido": "Mart�nez",
                 "edad": "22",
                 "matricula": "A12348",
                 "lista": null,
@@ -69,19 +71,20 @@
         "id": "3",
         "Nombre": "Grupo C",
         "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
             "id": "3",
             "nombre": "Jorge",
-            "apellido": "Hern\u00e1ndez",
+            "apellido": "Hern�ndez",
             "edad": "42",
-            "especialidad": "Programaci\u00f3n",
-            "lista": null,
-            "es_lista": false
+            "especialidad": "Programaci�n"
         },
         "Alumnos": [
             {
                 "id": "5",
                 "nombre": "Luis",
-                "apellido": "S\u00e1nchez",
+                "apellido": "S�nchez",
                 "edad": "20",
                 "matricula": "A12349",
                 "lista": null,
@@ -90,7 +93,7 @@
             {
                 "id": "6",
                 "nombre": "Laura",
-                "apellido": "D\u00edaz",
+                "apellido": "D�az",
                 "edad": "21",
                 "matricula": "A12350",
                 "lista": null,
@@ -102,19 +105,20 @@
         "id": "4",
         "Nombre": "Grupo D",
         "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
             "id": "4",
-            "nombre": "Luc\u00eda",
+            "nombre": "Luc�a",
             "apellido": "Morales",
             "edad": "39",
-            "especialidad": "Base de Datos",
-            "lista": null,
-            "es_lista": false
+            "especialidad": "Base de Datos"
         },
         "Alumnos": [
             {
                 "id": "7",
                 "nombre": "Pedro",
-                "apellido": "Ram\u00edrez",
+                "apellido": "Ram�rez",
                 "edad": "19",
                 "matricula": "A12351",
                 "lista": null,
@@ -122,7 +126,7 @@
             },
             {
                 "id": "8",
-                "nombre": "Sof\u00eda",
+                "nombre": "Sof�a",
                 "apellido": "Torres",
                 "edad": "22",
                 "matricula": "A12352",
@@ -135,19 +139,20 @@
         "id": "5",
         "Nombre": "Grupo E",
         "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
             "id": "5",
             "nombre": "Javier",
             "apellido": "Castro",
             "edad": "47",
-            "especialidad": "Redes",
-            "lista": null,
-            "es_lista": false
+            "especialidad": "Redes"
         },
         "Alumnos": [
             {
                 "id": "9",
                 "nombre": "Miguel",
-                "apellido": "Fern\u00e1ndez",
+                "apellido": "Fern�ndez",
                 "edad": "20",
                 "matricula": "A12353",
                 "lista": null,
@@ -156,12 +161,199 @@
             {
                 "id": "10",
                 "nombre": "Carmen",
-                "apellido": "L\u00f3pez",
+                "apellido": "L�pez",
                 "edad": "21",
                 "matricula": "A12354",
                 "lista": null,
                 "es_lista": false
             }
         ]
+    },
+    {
+        "id": "8",
+        "Nombre": "los juanos",
+        "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
+            "id": "98",
+            "nombre": "juana",
+            "apellido": "juanares",
+            "edad": "34",
+            "especialidad": "camioneras"
+        },
+        "Alumnos": [
+            {
+                "id": "76",
+                "nombre": "pepanate",
+                "apellido": "pepente",
+                "edad": "75",
+                "matricula": "37483749",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "Nombre": "los bailarines",
+        "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
+            "id": "61",
+            "nombre": "rene",
+            "apellido": "flores",
+            "edad": "45",
+            "especialidad": "bailarin"
+        },
+        "Alumnos": [
+            {
+                "id": "61",
+                "nombre": "yo",
+                "apellido": "mero",
+                "edad": "34",
+                "matricula": "64758674",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "Nombre": "Los Tilinos",
+        "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
+            "id": "67",
+            "nombre": "ramirino",
+            "apellido": "capuchino",
+            "edad": "43",
+            "especialidad": "programador"
+        },
+        "Alumnos": {
+            "lista": [],
+            "es_lista": true,
+            "ruta": null
+        }
+    },
+    {
+        "id": "76",
+        "Nombre": "camioneros",
+        "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
+            "id": "54",
+            "nombre": "juana",
+            "apellido": "juanero",
+            "edad": "54",
+            "especialidad": "tilinero"
+        },
+        "Alumnos": [
+            {
+                "id": "101",
+                "nombre": "jesus",
+                "apellido": "alberto",
+                "edad": "19",
+                "matricula": "24170021",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "102",
+        "Nombre": "quebien",
+        "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
+            "id": "102",
+            "nombre": "que bien",
+            "apellido": "juana",
+            "edad": "75",
+            "especialidad": "nose"
+        },
+        "Alumnos": [
+            {
+                "id": "102",
+                "nombre": "jesus",
+                "apellido": "jesus",
+                "edad": "23",
+                "matricula": "28398293",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "103",
+        "Nombre": "pruebas",
+        "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
+            "id": "103",
+            "nombre": "prueba",
+            "apellido": "funcional",
+            "edad": "34",
+            "especialidad": "nose"
+        },
+        "Alumnos": [
+            {
+                "id": "103",
+                "nombre": "alumnoprueba",
+                "apellido": "ap",
+                "edad": "53",
+                "matricula": "38495834",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "104",
+        "Nombre": "los tucanes",
+        "Maestro": {
+            "lista": [],
+            "es_lista": false,
+            "ruta": null,
+            "id": "104",
+            "nombre": "roberto",
+            "apellido": "gomez",
+            "edad": "63",
+            "especialidad": "teatro"
+        },
+        "Alumnos": [
+            {
+                "id": "104",
+                "nombre": "defer",
+                "apellido": "nose",
+                "edad": "34",
+                "matricula": "53235435",
+                "lista": null,
+                "es_lista": false
+            }
+        ]
+    },
+    {
+        "id": "105",
+        "Nombre": "boyargers",
+        "Maestro": {
+            "id": "75",
+            "nombre": "pedro",
+            "apellido": "picapiedra",
+            "edad": "23",
+            "especialidad": "rocas",
+            "lista": null,
+            "es_lista": false
+        },
+        "Alumnos": {
+            "lista": [],
+            "es_lista": true,
+            "ruta": null
+        }
     }
 ]
