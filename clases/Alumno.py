@@ -20,6 +20,7 @@ class Alumno(Lista):
         else:
             return "Numero de Alumnos " + str(len(self.lista))
 
+    
 if __name__ == "__main__":
     """
     alumno = Alumno(1,"Juan", "Pérez", 20, "123456")

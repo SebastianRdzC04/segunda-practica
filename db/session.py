@@ -11,7 +11,24 @@ MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 DB_NAME = os.getenv("DB_NAME", "iot_database")
 
 class MongoSession:
+    _instance = None
+    
+    ## Método para obtener la instancia única de 
+    ## MongoSession (Singleton)
+    ## mongo sesion siempre entra en el metodo __new__
+    ## ese metoodo es el que se encarga de crear la instancia
+    def __new__(cls, *args, **kwargs):
+        ##si es None, significa que no se ha creado la instancia
+        ## entonces se crea una nueva instancia delegandola a el super
+        if not cls._instance:
+            cls._instance = super(MongoSession, cls).__new__(cls)
+        ## sino solo se retorna la instancia ya creada
+        return cls._instance
+    
     def __init__(self):
+        if hasattr(self, '_initialized') and self._initialized:
+            return
+        self._initialized = True
         self.mongo_uri = MONGO_URI
         self.db_name = DB_NAME
         self._client = None
@@ -42,9 +59,11 @@ class MongoSession:
     def exportar(self, tabla, json_data):
         """Exporta datos JSON a la tabla especificada"""
         if self._db is None:
-            print("✗ Sin conexión a MongoDB. No se puede exportar.")
-            self._save_offline(tabla, json_data)
-            return None
+            print("✗ Sin conexión a MongoDB. Intentando reconectar...")
+            if not self._connect():
+                print("✗ No se pudo reconectar. Guardando offline.")
+                self._save_offline(tabla, json_data)
+                return None
             
         try:
             # Si hay conexión, primero sincronizar datos offline
@@ -96,6 +115,16 @@ class MongoSession:
     def _save_offline(self, tabla, json_data):
         """Guarda los datos en un archivo JSON local"""
         try:
+            def limpiar_ids(obj):
+                if isinstance(obj, dict):
+                    return {k: limpiar_ids(v) for k, v in obj.items() if k != '_id'}
+                elif isinstance(obj, list):
+                    return [limpiar_ids(item) for item in obj]
+                else:
+                    return obj
+    
+            json_data = limpiar_ids(json_data)
+    
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filename = f"{tabla}_{timestamp}.json"
             filepath = os.path.join(self.offline_dir, filename)

@@ -1,16 +1,20 @@
+from db.session import MongoSession
+
 class Lista:
     def __init__(self):
         self.lista = []
         self.es_lista = True
         self.ruta = None
+        self.session = MongoSession()
 
     #convertir a dicionario el objeto o los atributos de la lista
     def convertir_a_diccionario(self):
         if self.lista:
             return [vars(item) for item in self.lista]
         else:
-            return vars(self)
-
+            excluidos = {"session", "ruta", "lista", "es_lista"}
+            return {k: v for k, v in vars(self).items() if k not in excluidos and not k.startswith('_')}
+        
     def mostrar(self):
         if self.lista:
             print("Numero de Items:" + str(len(self.lista)))
@@ -35,6 +39,8 @@ class Lista:
             if self.mostrar_uno(data.id):
                 return False
             self.lista.append(data)
+            print(f"Agregado guayabo: {data}")
+            self.session.exportar(self.__class__.__name__.lower(), data.convertir_a_diccionario())
             return True
         else:
             return False
@@ -70,6 +76,7 @@ class Lista:
             return obj
 
     def exportar(self, ruta=None):
+        print(f"Exportando a: {ruta or self.ruta}")
         if ruta:
             self.ruta = ruta
 
@@ -79,11 +86,12 @@ class Lista:
         datos = []
         for item in self.lista:
             d = item.convertir_a_diccionario()
-            d = Lista.limpiar_ids(d)  # <--- Limpia todos los _id recursivamente
+            d = Lista.limpiar_ids(d)  # Limpia todos los _id recursivamente
             datos.append(d)
         with open(self.ruta, 'w') as file:
             import json
             json.dump(datos, file, indent=4, ensure_ascii=False)
+            
         return True
 
 

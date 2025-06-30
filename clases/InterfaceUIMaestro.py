@@ -9,6 +9,7 @@ class InterfaceUIMaestro(InterfaceUI):
         else:
             self.data = Maestro()
             self.data.importar("registros/maestros.json")
+            self.data.ruta = "registros/maestros.json"  # <-- Esto asegura que exportar() siempre tenga la ruta
 
     def menu(self):
         print("INTERFAZ GRAFICA MAESTRO")

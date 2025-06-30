@@ -1,15 +1,16 @@
 from clases.Lista import Lista
 import inspect
-from db.session import MongoSession
+# from db.session import MongoSession
 
 class InterfaceUI:
     def __init__(self):
         self.data = Lista()
-        self.session = MongoSession()
+        # self.session = MongoSession()
 
 
     def crear(self):
 
+        
         atributos = list(inspect.signature(self.data.__class__.__init__).parameters.keys())
         atributos.remove('self')
         print(atributos)
@@ -25,8 +26,14 @@ class InterfaceUI:
             return None
         else:
             print(f"registro {nuevo.nombre} creado y guardado.")
+            if not self.data.ruta:
+                # Asigna la ruta si no está definida
+                if self.data.__class__.__name__.lower() == "maestro":
+                    self.data.ruta = "registros/maestros.json"
+                elif self.data.__class__.__name__.lower() == "alumno":
+                    self.data.ruta = "registros/alumnos1.json"
+                # Agrega más casos si tienes otras listas
             self.data.exportar()
-            self.session.exportar(self.data.__class__.__name__.lower(), nuevo.convertir_a_diccionario())
             return nuevo
 
     def leer(self):

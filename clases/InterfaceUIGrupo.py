@@ -3,19 +3,18 @@ from .InterfaceUIAlumno import InterfaceUIAlumno
 from.Maestro import Maestro
 from .Alumno import Alumno
 from .InterfaceUIMaestro import InterfaceUIMaestro
-from db.session import MongoSession
+# from db.session import MongoSession
 
 
 
 class InterfaceUIGrupo:
     def __init__(self, grupos=None):
-        self.session = MongoSession()
+        # self.session = MongoSession()
         if grupos:
             self.grupos = grupos
         else:
             self.grupos = Grupo()
             self.grupos.importar("registros/grupos.json")
-            print(self.grupos.convertir_a_diccionario())
         self.interfaceMaestro = InterfaceUIMaestro()
 
     def crear(self):
@@ -54,8 +53,9 @@ class InterfaceUIGrupo:
             print(f"Grupo {grupo.Nombre} creado y guardado.")
             print(f"GRUPOS AL CREARLO {self.grupos}") 
             self.grupos.exportar()
-            self.session.exportar("grupo", grupo.convertir_a_diccionario())
+            # self.session.exportar("grupo", grupo.convertir_a_diccionario())
             return grupo
+        
     def leer(self):
         print("Leer un grupo")
         nombre = input("Ingrese el Id del grupo: ")

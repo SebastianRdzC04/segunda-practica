@@ -1,182 +1,51 @@
 [
     {
-        "id": "1",
-        "nombre": "Carlos",
-        "apellido": "Sánchez",
-        "edad": 35,
-        "especialidad": "Matemáticas",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "2",
-        "nombre": "Ana",
-        "apellido": "Gómez",
-        "edad": 30,
-        "especialidad": "Física",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "3",
-        "nombre": "Luis",
-        "apellido": "Martínez",
-        "edad": 40,
-        "especialidad": "Química",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "4",
+        "id": "7",
         "nombre": "sebas",
-        "apellido": "rodriguez",
-        "edad": "22",
-        "especialidad": "programacion",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "5",
-        "nombre": "pene",
-        "apellido": "duro",
-        "edad": "22",
-        "especialidad": "mecanica",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "juanito",
-        "nombre": "rodriguez",
-        "apellido": "50",
-        "edad": "progra",
-        "especialidad": "progra",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "10",
-        "nombre": "pedro",
-        "apellido": "martinez",
-        "edad": "40",
-        "especialidad": "progra",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "100",
-        "nombre": "juanito",
-        "apellido": "perez",
-        "edad": "20",
-        "especialidad": "preogra",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "200",
-        "nombre": "pedro",
-        "apellido": "pascal",
-        "edad": "24",
-        "especialidad": "progra",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "123",
-        "nombre": "pedro",
-        "apellido": "martinez",
-        "edad": "50",
-        "especialidad": "programacion",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "2500",
-        "nombre": "pedro",
-        "apellido": "rodriguez",
-        "edad": "50",
-        "especialidad": "progra",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "98",
-        "nombre": "juana",
-        "apellido": "juanares",
-        "edad": "34",
-        "especialidad": "camioneras",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "61",
-        "nombre": "rene",
-        "apellido": "flores",
-        "edad": "45",
-        "especialidad": "bailarin",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "67",
-        "nombre": "ramirino",
-        "apellido": "capuchino",
-        "edad": "43",
-        "especialidad": "programador",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "34",
-        "nombre": "marentes",
-        "apellido": "pereira",
-        "edad": "87",
-        "especialidad": "camionero",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "54",
-        "nombre": "juana",
-        "apellido": "juanero",
-        "edad": "54",
-        "especialidad": "tilinero",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "102",
-        "nombre": "que bien",
-        "apellido": "juana",
-        "edad": "75",
-        "especialidad": "nose",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "103",
-        "nombre": "prueba",
-        "apellido": "funcional",
-        "edad": "34",
-        "especialidad": "nose",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "104",
-        "nombre": "roberto",
-        "apellido": "gomez",
-        "edad": "63",
-        "especialidad": "teatro",
-        "lista": null,
-        "es_lista": false
-    },
-    {
-        "id": "75",
-        "nombre": "pedro",
-        "apellido": "picapiedra",
+        "apellido": "sobas",
         "edad": "23",
-        "especialidad": "rocas",
-        "lista": null,
-        "es_lista": false
+        "especialidad": "caminotera"
+    },
+    {
+        "id": "85",
+        "nombre": "juanito",
+        "apellido": "juanero",
+        "edad": "23",
+        "especialidad": "developer"
+    },
+    {
+        "id": "18",
+        "nombre": "sebastian",
+        "apellido": "rodriguero",
+        "edad": "24",
+        "especialidad": "develper"
+    },
+    {
+        "id": "20",
+        "nombre": "sebastiana",
+        "apellido": "contrerotas",
+        "edad": "34",
+        "especialidad": "developer"
+    },
+    {
+        "id": "50",
+        "nombre": "deltoro",
+        "apellido": "guillermo",
+        "edad": "30",
+        "especialidad": "todo"
+    },
+    {
+        "id": "igmar",
+        "nombre": "igmar",
+        "apellido": "salazar",
+        "edad": "70",
+        "especialidad": "redes neuronales"
+    },
+    {
+        "id": "90",
+        "nombre": "maestro",
+        "apellido": "prueba",
+        "edad": "34",
+        "especialidad": "dios"
     }
 ]
