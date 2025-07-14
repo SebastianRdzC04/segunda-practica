@@ -15,6 +15,8 @@ class InterfaceUIGrupo:
         else:
             self.grupos = Grupo()
             self.grupos.importar("registros/grupos.json")
+            self.grupos_offline = Grupo()
+            self.grupos_offline.importar("offline/grupos.json")
         self.interfaceMaestro = InterfaceUIMaestro()
 
     def crear(self):

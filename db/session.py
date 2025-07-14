@@ -113,8 +113,9 @@ class MongoSession:
                 print(f"✗ Error al sincronizar {filename}: {e}")
     
     def _save_offline(self, tabla, json_data):
-        """Guarda los datos en un archivo JSON local"""
+        """Guarda los datos en un único archivo JSON local por tabla"""
         try:
+            # Limpieza de _id
             def limpiar_ids(obj):
                 if isinstance(obj, dict):
                     return {k: limpiar_ids(v) for k, v in obj.items() if k != '_id'}
@@ -122,16 +123,30 @@ class MongoSession:
                     return [limpiar_ids(item) for item in obj]
                 else:
                     return obj
-    
+
             json_data = limpiar_ids(json_data)
-    
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"{tabla}_{timestamp}.json"
+
+            filename = f"{tabla}.json"
             filepath = os.path.join(self.offline_dir, filename)
-            
+
+            if os.path.exists(filepath):
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    try:
+                        existing = json.load(f)
+                        if not isinstance(existing, list):
+                            existing = [existing]
+                    except (json.JSONDecodeError, ValueError):
+                        existing = []
+            else:
+                existing = []
+
+            if json_data not in existing:
+                existing.append(json_data)
+
             with open(filepath, 'w', encoding='utf-8') as f:
-                json.dump(json_data, f, ensure_ascii=False, indent=2)
-            
+                json.dump(existing, f, indent=2, ensure_ascii=False)
+
             print(f"✓ Datos guardados localmente en: {filepath}")
+
         except Exception as e:
             print(f"✗ Error al guardar archivo local: {e}")

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "934",
+    "Nombre": "jsf",
+    "Maestro": {
+      "id": "33525",
+      "nombre": "jfjslkjflds",
+      "apellido": "nisbiucbds",
+      "edad": "765",
+      "especialidad": "fskjbs"
+    },
+    "Alumnos": [
+      {
+        "id": "43634",
+        "nombre": "nofsbfuis",
+        "apellido": "nsbshbfsjd",
+        "edad": "63654756",
+        "matricula": "9824823",
+        "lista": null,
+        "es_lista": false
+      },
+      {
+        "id": "34834",
+        "nombre": "nisifbdubs",
+        "apellido": "dfgsudbf",
+        "edad": "8454",
+        "matricula": "nibsiubfd",
+        "lista": null,
+        "es_lista": false
+      }
+    ]
+  }
+]
