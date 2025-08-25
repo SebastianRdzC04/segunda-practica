@@ -61,5 +61,26 @@
         "apellido": "nisbiucbds",
         "edad": "765",
         "especialidad": "fskjbs"
+    },
+    {
+        "id": "900",
+        "nombre": "rosales",
+        "apellido": "duran",
+        "edad": "40",
+        "especialidad": "programacion"
+    },
+    {
+        "id": "901",
+        "nombre": "pedro",
+        "apellido": "prueba",
+        "edad": "84",
+        "especialidad": "programacion"
+    },
+    {
+        "id": "902",
+        "nombre": "truena",
+        "apellido": "truena",
+        "edad": "89",
+        "especialidad": "peppe"
     }
 ]

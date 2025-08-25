@@ -1,9 +1,0 @@
-{
-    "id": 1,
-    "nombre": "Juan",
-    "apellido": "P\u00e9rez",
-    "edad": 20,
-    "matricula": "123456",
-    "lista": null,
-    "es_lista": false
-}

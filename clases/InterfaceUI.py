@@ -31,7 +31,7 @@ class InterfaceUI:
                 if self.data.__class__.__name__.lower() == "maestro":
                     self.data.ruta = "registros/maestros.json"
                 elif self.data.__class__.__name__.lower() == "alumno":
-                    self.data.ruta = "registros/alumnos1.json"
+                    self.data.ruta = "registros/alumnos.json"
                 # Agrega más casos si tienes otras listas
             self.data.exportar()
             return nuevo
@@ -79,4 +79,13 @@ class InterfaceUI:
             self.data.exportar()
         else:
             print(f"No se encontró un dato con ID {id} o no se pudo eliminar.")
+
+    def agregar_calificacion(self, calificacion):
+        print(f"Agregando calificación: {calificacion}")
+        agregado = self.data.agregar_calificacion(calificacion)
+        if agregado:
+            print(f"Calificación {calificacion} agregada correctamente.")
+            self.data.exportar()
+        else:
+            print(f"No se pudo agregar la calificación {calificacion}.")
 

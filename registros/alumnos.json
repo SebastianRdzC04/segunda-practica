@@ -1,0 +1,58 @@
+[
+    {
+        "id": "900",
+        "nombre": "jesus",
+        "apellido": "alberto",
+        "edad": "32",
+        "matricula": "837483",
+        "calificacion": 90
+    },
+    {
+        "id": "901",
+        "nombre": "sebastian",
+        "apellido": "contreras",
+        "edad": "95",
+        "matricula": "8372847",
+        "calificacion": 70
+    },
+    {
+        "id": "902",
+        "nombre": "juanito",
+        "apellido": "pepe",
+        "edad": "32",
+        "matricula": "847384",
+        "calificacion": 65
+    },
+    {
+        "id": "903",
+        "nombre": "brandon",
+        "apellido": "esquivel",
+        "edad": "39",
+        "matricula": "927492",
+        "calificacion": 69
+    },
+    {
+        "id": "904",
+        "nombre": "jorge",
+        "apellido": "ortiz",
+        "edad": "26",
+        "matricula": "972847",
+        "calificacion": 50
+    },
+    {
+        "id": "905",
+        "nombre": "emilio",
+        "apellido": "cortina",
+        "edad": "30",
+        "matricula": "937473",
+        "calificacion": 79
+    },
+    {
+        "id": "906",
+        "nombre": "pepe",
+        "apellido": "grillo",
+        "edad": "93",
+        "matricula": "937434",
+        "calificacion": "99"
+    }
+]

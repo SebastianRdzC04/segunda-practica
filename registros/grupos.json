@@ -1,462 +1,343 @@
 [
     {
-        "id": "1",
-        "Nombre": "Grupo A",
-        "Maestro": {
-            "id": "1",
-            "nombre": "Roberto",
-            "apellido": "G�mez",
-            "edad": "45",
-            "especialidad": "Matem�ticas"
-        },
+        "id": "201",
+        "Nombre": "201",
+        "Calificaciones": [],
+        "Maestro": {},
         "Alumnos": [
             {
-                "id": "1",
-                "nombre": "Juan",
-                "apellido": "P�rez",
-                "edad": "20",
-                "matricula": "A12345",
-                "lista": null,
-                "es_lista": false
-            },
-            {
-                "id": "2",
-                "nombre": "Mar�a",
-                "apellido": "Gonz�lez",
-                "edad": "21",
-                "matricula": "A12346",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "2",
-        "Nombre": "Grupo B",
-        "Maestro": {
-            "id": "2",
-            "nombre": "Elena",
-            "apellido": "V�zquez",
-            "edad": "38",
-            "especialidad": "F�sica"
-        },
-        "Alumnos": [
-            {
-                "id": "3",
-                "nombre": "Carlos",
-                "apellido": "Rodr�guez",
-                "edad": "19",
-                "matricula": "A12347",
-                "lista": null,
-                "es_lista": false
-            },
-            {
-                "id": "4",
-                "nombre": "Ana",
-                "apellido": "Mart�nez",
-                "edad": "22",
-                "matricula": "A12348",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "3",
-        "Nombre": "Grupo C",
-        "Maestro": {
-            "id": "3",
-            "nombre": "Jorge",
-            "apellido": "Hern�ndez",
-            "edad": "42",
-            "especialidad": "Programaci�n"
-        },
-        "Alumnos": [
-            {
-                "id": "5",
-                "nombre": "Luis",
-                "apellido": "S�nchez",
-                "edad": "20",
-                "matricula": "A12349",
-                "lista": null,
-                "es_lista": false
-            },
-            {
-                "id": "6",
-                "nombre": "Laura",
-                "apellido": "D�az",
-                "edad": "21",
-                "matricula": "A12350",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "4",
-        "Nombre": "Grupo D",
-        "Maestro": {
-            "id": "4",
-            "nombre": "Luc�a",
-            "apellido": "Morales",
-            "edad": "39",
-            "especialidad": "Base de Datos"
-        },
-        "Alumnos": [
-            {
-                "id": "7",
-                "nombre": "Pedro",
-                "apellido": "Ram�rez",
-                "edad": "19",
-                "matricula": "A12351",
-                "lista": null,
-                "es_lista": false
-            },
-            {
-                "id": "8",
-                "nombre": "Sof�a",
-                "apellido": "Torres",
-                "edad": "22",
-                "matricula": "A12352",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "5",
-        "Nombre": "Grupo E",
-        "Maestro": {
-            "id": "5",
-            "nombre": "Javier",
-            "apellido": "Castro",
-            "edad": "47",
-            "especialidad": "Redes"
-        },
-        "Alumnos": [
-            {
-                "id": "9",
-                "nombre": "Miguel",
-                "apellido": "Fern�ndez",
-                "edad": "20",
-                "matricula": "A12353",
-                "lista": null,
-                "es_lista": false
-            },
-            {
-                "id": "10",
-                "nombre": "Carmen",
-                "apellido": "L�pez",
-                "edad": "21",
-                "matricula": "A12354",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "8",
-        "Nombre": "los juanos",
-        "Maestro": {
-            "id": "98",
-            "nombre": "juana",
-            "apellido": "juanares",
-            "edad": "34",
-            "especialidad": "camioneras"
-        },
-        "Alumnos": [
-            {
-                "id": "76",
-                "nombre": "pepanate",
-                "apellido": "pepente",
-                "edad": "75",
-                "matricula": "37483749",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "10",
-        "Nombre": "los bailarines",
-        "Maestro": {
-            "id": "61",
-            "nombre": "rene",
-            "apellido": "flores",
-            "edad": "45",
-            "especialidad": "bailarin"
-        },
-        "Alumnos": [
-            {
-                "id": "61",
-                "nombre": "yo",
-                "apellido": "mero",
+                "id": "201",
+                "nombre": "jesu",
+                "apellido": "pere",
                 "edad": "34",
-                "matricula": "64758674",
-                "lista": null,
-                "es_lista": false
+                "matricula": "201",
+                "calificacion": 0
             }
         ]
     },
     {
-        "id": "7",
-        "Nombre": "Los Tilinos",
-        "Maestro": {
-            "id": "67",
-            "nombre": "ramirino",
-            "apellido": "capuchino",
-            "edad": "43",
-            "especialidad": "programador"
-        },
-        "Alumnos": {}
-    },
-    {
-        "id": "76",
-        "Nombre": "camioneros",
-        "Maestro": {
-            "id": "54",
-            "nombre": "juana",
-            "apellido": "juanero",
-            "edad": "54",
-            "especialidad": "tilinero"
-        },
+        "id": "202",
+        "Nombre": "jaunsito",
+        "Calificaciones": [],
+        "Maestro": {},
         "Alumnos": [
             {
-                "id": "101",
-                "nombre": "jesus",
-                "apellido": "alberto",
-                "edad": "19",
-                "matricula": "24170021",
-                "lista": null,
-                "es_lista": false
+                "id": "202",
+                "nombre": "queien",
+                "apellido": "quemal",
+                "edad": "202",
+                "matricula": "202",
+                "calificacion": 0
             }
         ]
     },
     {
-        "id": "102",
-        "Nombre": "quebien",
-        "Maestro": {
-            "id": "102",
-            "nombre": "que bien",
-            "apellido": "juana",
-            "edad": "75",
-            "especialidad": "nose"
-        },
+        "id": "nuevos",
+        "Nombre": "nuevos",
+        "Calificaciones": [],
+        "Maestro": {},
         "Alumnos": [
             {
-                "id": "102",
-                "nombre": "jesus",
-                "apellido": "jesus",
-                "edad": "23",
-                "matricula": "28398293",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "103",
-        "Nombre": "pruebas",
-        "Maestro": {
-            "id": "103",
-            "nombre": "prueba",
-            "apellido": "funcional",
-            "edad": "34",
-            "especialidad": "nose"
-        },
-        "Alumnos": [
+                "id": "203",
+                "nombre": "emilio",
+                "apellido": "paterno",
+                "edad": "76",
+                "matricula": "34334",
+                "calificacion": 0
+            },
             {
-                "id": "103",
-                "nombre": "alumnoprueba",
-                "apellido": "ap",
+                "id": "283223",
+                "nombre": "juanito",
+                "apellido": "peres",
                 "edad": "53",
-                "matricula": "38495834",
-                "lista": null,
-                "es_lista": false
+                "matricula": "4637",
+                "calificacion": 0
             }
         ]
     },
     {
-        "id": "104",
-        "Nombre": "los tucanes",
-        "Maestro": {
-            "id": "104",
-            "nombre": "roberto",
-            "apellido": "gomez",
-            "edad": "63",
-            "especialidad": "teatro"
-        },
+        "id": "205",
+        "Nombre": "los tilines",
+        "Calificaciones": [],
+        "Maestro": {},
         "Alumnos": [
             {
-                "id": "104",
-                "nombre": "defer",
-                "apellido": "nose",
-                "edad": "34",
-                "matricula": "53235435",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "105",
-        "Nombre": "boyargers",
-        "Maestro": {
-            "id": "75",
-            "nombre": "pedro",
-            "apellido": "picapiedra",
-            "edad": "23",
-            "especialidad": "rocas"
-        },
-        "Alumnos": {}
-    },
-    {
-        "id": "15 ",
-        "Nombre": "clase especial",
-        "Maestro": {
-            "id": "20",
-            "nombre": "sebastiana",
-            "apellido": "contrerotas",
-            "edad": "34",
-            "especialidad": "developer"
-        },
-        "Alumnos": [
-            {
-                "id": "20",
-                "nombre": "jesusa",
-                "apellido": "villarrla",
-                "edad": "32",
-                "matricula": "74638473",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "50",
-        "Nombre": "alcolicaos",
-        "Maestro": {
-            "id": "50",
-            "nombre": "deltoro",
-            "apellido": "guillermo",
-            "edad": "30",
-            "especialidad": "todo"
-        },
-        "Alumnos": [
-            {
-                "id": "2000000",
-                "nombre": "sebastian",
-                "apellido": "rodriguez",
-                "edad": "24",
-                "matricula": "2000000",
-                "lista": null,
-                "es_lista": false
-            },
-            {
-                "id": "51",
+                "id": "205",
                 "nombre": "jesus",
                 "apellido": "alberto",
-                "edad": "24170021",
-                "matricula": "24170021",
-                "lista": null,
-                "es_lista": false
-            }
-        ]
-    },
-    {
-        "id": "51",
-        "Nombre": "computadores",
-        "Maestro": {
-            "id": "igmar",
-            "nombre": "igmar",
-            "apellido": "salazar",
-            "edad": "70",
-            "especialidad": "redes neuronales"
-        },
-        "Alumnos": [
-            {
-                "id": "60",
-                "nombre": "azael",
-                "apellido": "garcia",
-                "edad": "15",
-                "matricula": "62736473",
-                "lista": null,
-                "es_lista": false
+                "edad": "34",
+                "matricula": "28738",
+                "calificacion": 0
             },
             {
-                "id": "65",
-                "nombre": "alberto",
-                "apellido": "gimenez",
-                "edad": "24",
-                "matricula": "38473847",
-                "lista": null,
-                "es_lista": false
+                "id": "206",
+                "nombre": "emilio tunas",
+                "apellido": "pepe",
+                "edad": "73",
+                "matricula": "384732",
+                "calificacion": 0
+            },
+            {
+                "id": "207",
+                "nombre": "antares",
+                "apellido": "rodriguez",
+                "edad": "63",
+                "matricula": "384739",
+                "calificacion": 0
+            },
+            {
+                "id": "208",
+                "nombre": "juana",
+                "apellido": "tavares",
+                "edad": "34",
+                "matricula": "283729",
+                "calificacion": 0
+            },
+            {
+                "id": "209",
+                "nombre": "josefina",
+                "apellido": "marentes",
+                "edad": "53",
+                "matricula": "2368342",
+                "calificacion": 0
+            },
+            {
+                "id": "210",
+                "nombre": "pepe",
+                "apellido": "recio",
+                "edad": "72",
+                "matricula": "827364",
+                "calificacion": 0
             }
         ]
     },
     {
-        "id": "70",
-        "Nombre": "tester 5",
-        "Maestro": {
-            "id": "90",
-            "nombre": "maestro",
-            "apellido": "prueba",
-            "edad": "34",
-            "especialidad": "dios"
-        },
+        "id": "727",
+        "Nombre": "jejs",
+        "Calificaciones": [],
+        "Maestro": {},
         "Alumnos": [
             {
-                "id": "100",
+                "id": "938",
+                "nombre": "ejsus",
+                "apellido": "peres",
+                "edad": "788",
+                "matricula": "343",
+                "calificacion": 0
+            }
+        ]
+    },
+    {
+        "id": "210",
+        "Nombre": "pepe",
+        "Calificaciones": [],
+        "Maestro": {},
+        "Alumnos": [
+            {
+                "id": "210",
                 "nombre": "jesus",
-                "apellido": "tester",
-                "edad": "55",
-                "matricula": "46574657",
-                "lista": null,
-                "es_lista": false
+                "apellido": "pepe",
+                "edad": "82",
+                "matricula": "376278",
+                "calificacion": 0
             }
         ]
     },
     {
-        "id": "45",
-        "Nombre": "sfs",
-        "Maestro": {
-            "id": "9000",
-            "nombre": "nasknfsa",
-            "apellido": "agre",
-            "edad": "3423",
-            "especialidad": "jsgodjkgf"
-        },
-        "Alumnos": {}
+        "id": "273872",
+        "Nombre": "jsfjs",
+        "Calificaciones": [],
+        "Maestro": {},
+        "Alumnos": []
     },
     {
-        "id": "934",
-        "Nombre": "jsf",
+        "id": "9393",
+        "Nombre": "calificar",
+        "Calificaciones": [],
+        "Maestro": {},
+        "Alumnos": [
+            {
+                "id": "3423",
+                "nombre": "nsfs",
+                "apellido": "peepd",
+                "edad": "34",
+                "matricula": "52353",
+                "calificacion": 0
+            }
+        ]
+    },
+    {
+        "id": "800",
+        "Nombre": "sexto",
+        "Calificaciones": [
+            64
+        ],
+        "Maestro": {},
+        "Alumnos": [
+            {
+                "id": "200",
+                "nombre": "pepe",
+                "apellido": "arriola",
+                "edad": "64",
+                "matricula": "74636",
+                "calificacion": 0
+            },
+            {
+                "id": "939393",
+                "nombre": "jesus",
+                "apellido": "alberto",
+                "edad": "34",
+                "matricula": "837473",
+                "calificacion": 0
+            },
+            {
+                "id": "7363727",
+                "nombre": "pelo",
+                "apellido": "pepe",
+                "edad": "63",
+                "matricula": "837473",
+                "calificacion": 0
+            },
+            {
+                "id": "837374",
+                "nombre": "rodriguez",
+                "apellido": "arriola",
+                "edad": "83",
+                "matricula": "837473",
+                "calificacion": 0
+            },
+            {
+                "id": "83747",
+                "nombre": "pe�a ",
+                "apellido": "nieto",
+                "edad": "37",
+                "matricula": "3846282",
+                "calificacion": 0
+            }
+        ]
+    },
+    {
+        "id": "700",
+        "Nombre": "juancito",
+        "Calificaciones": [],
+        "Maestro": {},
+        "Alumnos": [
+            {
+                "id": "45453",
+                "nombre": "pepepe",
+                "apellido": "popopo",
+                "edad": "38",
+                "matricula": "89374",
+                "calificacion": 0
+            }
+        ]
+    },
+    {
+        "id": "900",
+        "Nombre": "INTEGRADORA EDIT",
+        "Calificaciones": [
+            90,
+            70,
+            65,
+            69,
+            50,
+            79
+        ],
         "Maestro": {
-            "id": "33525",
-            "nombre": "jfjslkjflds",
-            "apellido": "nisbiucbds",
-            "edad": "765",
-            "especialidad": "fskjbs"
+            "id": "900",
+            "nombre": "rosales",
+            "apellido": "duran",
+            "edad": "40",
+            "especialidad": "programacion"
         },
         "Alumnos": [
             {
-                "id": "43634",
-                "nombre": "nofsbfuis",
-                "apellido": "nsbshbfsjd",
-                "edad": "63654756",
-                "matricula": "9824823",
-                "lista": null,
-                "es_lista": false
+                "id": "900",
+                "nombre": "jesus",
+                "apellido": "alberto",
+                "edad": "32",
+                "matricula": "837483",
+                "calificacion": 90
             },
             {
-                "id": "34834",
-                "nombre": "nisifbdubs",
-                "apellido": "dfgsudbf",
-                "edad": "845y4",
-                "matricula": "nibsiubfd",
-                "lista": null,
-                "es_lista": false
+                "id": "901",
+                "nombre": "sebastian",
+                "apellido": "contreras",
+                "edad": "95",
+                "matricula": "8372847",
+                "calificacion": 70
+            },
+            {
+                "id": "902",
+                "nombre": "juanito",
+                "apellido": "pepe",
+                "edad": "32",
+                "matricula": "847384",
+                "calificacion": 65
+            },
+            {
+                "id": "903",
+                "nombre": "brandon",
+                "apellido": "esquivel",
+                "edad": "39",
+                "matricula": "927492",
+                "calificacion": 69
+            },
+            {
+                "id": "904",
+                "nombre": "jorge",
+                "apellido": "ortiz",
+                "edad": "26",
+                "matricula": "972847",
+                "calificacion": 50
+            },
+            {
+                "id": "905",
+                "nombre": "emilio",
+                "apellido": "cortina",
+                "edad": "30",
+                "matricula": "937473",
+                "calificacion": 79
+            },
+            {
+                "id": "906",
+                "nombre": "pepe",
+                "apellido": "grillo",
+                "edad": "93",
+                "matricula": "937434",
+                "calificacion": 99
             }
         ]
+    },
+    {
+        "id": "902",
+        "Nombre": "truena",
+        "Calificaciones": [
+            80
+        ],
+        "Maestro": {
+            "id": "902",
+            "nombre": "truena",
+            "apellido": "truena",
+            "edad": "89",
+            "especialidad": "peppe"
+        },
+        "Alumnos": [
+            {
+                "id": "920",
+                "nombre": "truena",
+                "apellido": "truena",
+                "edad": "84",
+                "matricula": "9384",
+                "calificacion": 80
+            }
+        ]
+    },
+    {
+        "id": "92848",
+        "Nombre": "los tucanes",
+        "Calificaciones": [],
+        "Maestro": {},
+        "Alumnos": []
     }
 ]

@@ -27,11 +27,16 @@ class Lista:
                         print(f"{atributo}: {valor}")
 
     def mostrar_uno(self, id):
+        print(f"Buscando item con ID: {id}")
         if self.es_lista:
+            print(f"items: {self.lista}")
             for item in self.lista:
                 if item.id == id:
+                    print(f"Item encontrado: {item}")
                     return item
-        return False
+        else:
+            print("No es una lista.")
+            return False
 
     def agregar(self, data):
         if self.es_lista:
@@ -86,7 +91,7 @@ class Lista:
         datos = []
         for item in self.lista:
             d = item.convertir_a_diccionario()
-            d = Lista.limpiar_ids(d)  # Limpia todos los _id recursivamente
+            d = Lista.limpiar_ids(d) 
             datos.append(d)
         with open(self.ruta, 'w') as file:
             import json

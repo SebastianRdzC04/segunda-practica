@@ -1,18 +1,26 @@
 from .Lista import Lista
 
 class Alumno(Lista):
-    def __init__(self,id = None, nombre=None, apellido=None, edad=None, matricula=None):
-
+    def __init__(self, id=None, nombre=None, apellido=None, edad=None, matricula=None, calificacion=None):
         if nombre is not None and apellido is not None and edad is not None and matricula is not None and id is not None:
             self.id = id
             self.nombre = nombre
             self.apellido = apellido
             self.edad = edad
             self.matricula = matricula
+            self.calificacion = calificacion if calificacion is not None else 0
             self.lista = None
             self.es_lista = False
         else:
             super().__init__()
+
+    def esta_aprobado(self, limite=70):
+        """Verifica si el alumno está aprobado"""
+        return self.calificacion >= limite
+
+    def esta_reprobado(self, limite=70):
+        """Verifica si el alumno está reprobado"""
+        return self.calificacion < limite
 
     def __str__(self):
         if hasattr(self, 'nombre'):
@@ -20,7 +28,6 @@ class Alumno(Lista):
         else:
             return "Numero de Alumnos " + str(len(self.lista))
 
-    
 if __name__ == "__main__":
     """
     alumno = Alumno(1,"Juan", "Pérez", 20, "123456")

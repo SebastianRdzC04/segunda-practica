@@ -9,7 +9,7 @@ class InterfaceUIAlumno(InterfaceUI):
             self.data = data
         else:
             self.data = Alumno()
-            self.data.importar("registros/alumnos1.json")
+            self.data.importar("registros/alumnos.json")
 
     def menu(self):
         print("INTERFAZ GRAFICA ALUMNO")
@@ -38,7 +38,7 @@ class InterfaceUIAlumno(InterfaceUI):
             print("2. Leer Alumno")
             print("3. Editar Alumno")
             print("4. Eliminar Alumno")
-            print("5. Mostrar Todos los Alumnos")
+            print("5. Mostrar Alumnos")
             print("Para salir, presiona cualquier otra tecla")
 
             opcion = input("Selecciona una opción: ")

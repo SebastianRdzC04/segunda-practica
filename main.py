@@ -7,7 +7,7 @@ from uuid import UUID
 from clases.Alumno import Alumno
 from clases.Grupo import Grupo
 from clases.Maestro import Maestro
-from clases.InterfaceUI import InerfaceAlumno
+from clases.InterfaceUI import InterfaceAlumno
 
 
 

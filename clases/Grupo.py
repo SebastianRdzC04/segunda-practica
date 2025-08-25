@@ -3,12 +3,13 @@ from .Alumno import Alumno
 from .Maestro import Maestro
 
 class Grupo(Lista):
-    def __init__(self,id=None, Nombre = None, Maestro = None, Alumnos=None):
+    def __init__(self,id=None, Nombre = None, Maestro = None, Alumnos=None, Calificaciones=None):
         if Nombre and id:
             self.id = id
             self.Nombre = Nombre
             self.Maestro = Maestro
             self.Alumnos = Alumnos
+            self.Calificaciones = Calificaciones if Calificaciones is not None else []
             self.lista = None
             self.es_lista = False
         else:
@@ -16,7 +17,7 @@ class Grupo(Lista):
 
     def __str__(self):
         if hasattr(self, 'Nombre'):
-            return f"(Grupo: {self.Nombre}), (Maestro: {self.Maestro}), (Alumnos: {self.Alumnos})"
+            return f"(Grupo: {self.Nombre}), (Calificacion: {self.Calificaciones}), (Maestro: {self.Maestro}), (Alumnos: {self.Alumnos})"
         else:
             return "Numero de Grupos " + str(len(self.lista))
 
@@ -30,48 +31,112 @@ class Grupo(Lista):
                 self.lista.append(nuevo_grupo)
             return self
         else:
-            # Asegurar que tenemos todas las propiedades necesarias
             self.id = data.get('id')
             self.Nombre = data.get('Nombre')
+            
+            ## calificaciones crudas
+            calificaciones_raw = data.get('Calificaciones', [])
+            self.Calificaciones = []
+            
+            for cal in calificaciones_raw:
+                try:
+                    cal_int = int(float(cal))
+                    if 0 <= cal_int <= 100:
+                        self.Calificaciones.append(cal_int)
+                except (ValueError, TypeError):
+                    pass
 
-            # Configurar el maestro
             maestro_dict = data.get('Maestro', {})
             self.Maestro = Maestro()
             self.Maestro.es_lista = False
             self.Maestro.convertir_json_objeto(maestro_dict)
 
-            # Configurar los alumnos
             alumnos_data = data.get('Alumnos', [])
             self.Alumnos = Alumno()
             self.Alumnos.es_lista = True
-            self.Alumnos.convertir_json_objeto(alumnos_data)
             
+            if alumnos_data:
+                self.Alumnos.lista = []
+                for alumno_data in alumnos_data:
+                    if isinstance(alumno_data, dict):
+                        calificacion_raw = alumno_data.get('calificacion', 0)
+                        try:
+                            calificacion = int(float(calificacion_raw))
+                        except (ValueError, TypeError):
+                            calificacion = 0
+                        
+                        alumno = Alumno(
+                            id=alumno_data.get('id'),
+                            nombre=alumno_data.get('nombre'),
+                            apellido=alumno_data.get('apellido'),
+                            edad=alumno_data.get('edad'),
+                            matricula=alumno_data.get('matricula'),
+                            calificacion=calificacion
+                        )
+                        self.Alumnos.lista.append(alumno)
             return self
+    
+    def agregar_alumno(self, alumno):
+        """Agrega un alumno al grupo y extrae su calificación para el array del grupo"""
+        if not hasattr(self, 'Alumnos') or self.Alumnos is None:
+            self.Alumnos = Alumno()
+            self.Alumnos.es_lista = True
+            
+        if not hasattr(self, 'Calificaciones'):
+            self.Calificaciones = []
+            
+        self.Alumnos.agregar(alumno)
+        
+        if hasattr(alumno, 'calificacion') and alumno.calificacion is not None:
+            self.Calificaciones.append(alumno.calificacion)
+
+    def obtener_estadisticas(self):
+        """Calcula estadísticas básicas del grupo"""
+        if not self.Calificaciones:
+            return None
+        
+        calificaciones = [int(cal) for cal in self.Calificaciones if isinstance(cal, (int, float, str))]
+        
+        if not calificaciones:
+            return None
+        
+        return {
+            'total_calificaciones': len(calificaciones),
+            'promedio': sum(calificaciones) / len(calificaciones),
+            'maximo': max(calificaciones),
+            'minimo': min(calificaciones),
+            'aprobados': len([c for c in calificaciones if c >= 70]),
+            'reprobados': len([c for c in calificaciones if c < 70])
+        }
 
     def convertir_a_diccionario(self):
         if self.lista:
-            grupos_diccionario = []
-            for item in self.lista:
-                grupos_diccionario.append(item.convertir_a_diccionario())
-            return grupos_diccionario
-
+            return [item.convertir_a_diccionario() for item in self.lista]
         else:
             alumnos_diccionario = []
-            if self.Alumnos is not None:
-                alumnos_diccionario = self.Alumnos.convertir_a_diccionario()
+            if self.Alumnos and hasattr(self.Alumnos, 'lista') and self.Alumnos.lista:
+                for alumno in self.Alumnos.lista:
+                    alumno_dict = {
+                        "id": alumno.id,
+                        "nombre": alumno.nombre,
+                        "apellido": alumno.apellido,
+                        "edad": alumno.edad,
+                        "matricula": alumno.matricula,
+                        "calificacion": getattr(alumno, 'calificacion', 0)
+                    }
+                    alumnos_diccionario.append(alumno_dict)
 
             maestro_diccionario = {}
-            if self.Maestro is not None:
+            if self.Maestro:
                 maestro_diccionario = self.Maestro.convertir_a_diccionario()
 
             return {
                 "id": self.id,
                 "Nombre": self.Nombre,
+                "Calificaciones": getattr(self, 'Calificaciones', []),
                 "Maestro": maestro_diccionario,
                 "Alumnos": alumnos_diccionario
             }
-
-
 
 if __name__ == "__main__":
     # Crear 10 alumnos
