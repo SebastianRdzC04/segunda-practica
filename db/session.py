@@ -95,19 +95,30 @@ class MongoSession:
             try:
                 # Extraer nombre de tabla del archivo
                 filename = os.path.basename(filepath)
-                tabla = filename.split('_')[0]  # Formato: tabla_timestamp.json
+                tabla = filename.split('.')[0]
                 
                 # Leer datos del archivo
                 with open(filepath, 'r', encoding='utf-8') as f:
                     json_data = json.load(f)
                 
-                # Enviar a MongoDB
-                collection = self._db[tabla]
-                result = collection.insert_one(json_data)
+                if isinstance(json_data, list):
+                    collection = self._db[tabla]
+                    for item in json_data:
+                        if isinstance(item, dict):
+                            try:
+                                result = collection.insert_one(item)
+                                print(f"✓ Documento sincronizado: {result.inserted_id}")
+                            except Exception as e:
+                                print(f"✗ Error al insertar documento: {e}")
+                else:
+                    # Single document
+                    collection = self._db[tabla]
+                    result = collection.insert_one(json_data)
+                    print(f"✓ Sincronizado: {filename} -> ID: {result.inserted_id}")
                 
                 # Si se envió exitosamente, eliminar archivo
                 os.remove(filepath)
-                print(f"✓ Sincronizado y eliminado: {filename} -> ID: {result.inserted_id}")
+                print(f"✓ Archivo eliminado: {filename}")
                 
             except Exception as e:
                 print(f"✗ Error al sincronizar {filename}: {e}")

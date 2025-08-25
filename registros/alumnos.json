@@ -1,58 +1,50 @@
 [
     {
-        "id": "900",
-        "nombre": "jesus",
-        "apellido": "alberto",
-        "edad": "32",
-        "matricula": "837483",
-        "calificacion": 90
+        "id": "92374",
+        "nombre": "Igmar",
+        "apellido": "Salazar",
+        "edad": "40",
+        "matricula": "397342",
+        "calificacion": "90"
     },
     {
-        "id": "901",
-        "nombre": "sebastian",
-        "apellido": "contreras",
-        "edad": "95",
-        "matricula": "8372847",
-        "calificacion": 70
+        "id": "927743",
+        "nombre": "Jesus",
+        "apellido": "Adrian",
+        "edad": "45",
+        "matricula": "974873",
+        "calificacion": "100"
     },
     {
-        "id": "902",
-        "nombre": "juanito",
-        "apellido": "pepe",
-        "edad": "32",
-        "matricula": "847384",
-        "calificacion": 65
+        "id": "983473",
+        "nombre": "Ramiro",
+        "apellido": "Ezquivel",
+        "edad": "45",
+        "matricula": "837834",
+        "calificacion": "69"
     },
     {
-        "id": "903",
-        "nombre": "brandon",
-        "apellido": "esquivel",
-        "edad": "39",
-        "matricula": "927492",
-        "calificacion": 69
-    },
-    {
-        "id": "904",
-        "nombre": "jorge",
-        "apellido": "ortiz",
-        "edad": "26",
-        "matricula": "972847",
-        "calificacion": 50
-    },
-    {
-        "id": "905",
-        "nombre": "emilio",
-        "apellido": "cortina",
-        "edad": "30",
-        "matricula": "937473",
-        "calificacion": 79
-    },
-    {
-        "id": "906",
-        "nombre": "pepe",
-        "apellido": "grillo",
-        "edad": "93",
+        "id": "723494",
+        "nombre": "Abel",
+        "apellido": "Escobedo",
+        "edad": "35",
         "matricula": "937434",
-        "calificacion": "99"
+        "calificacion": "50"
+    },
+    {
+        "id": "242326",
+        "nombre": "Laura",
+        "apellido": "Elena",
+        "edad": "47",
+        "matricula": "938484",
+        "calificacion": "70"
+    },
+    {
+        "id": "37472749",
+        "nombre": "Luis Enrique",
+        "apellido": "Garcia",
+        "edad": "43",
+        "matricula": "324255",
+        "calificacion": "80"
     }
 ]

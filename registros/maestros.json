@@ -82,5 +82,19 @@
         "apellido": "truena",
         "edad": "89",
         "especialidad": "peppe"
+    },
+    {
+        "id": "92848",
+        "nombre": "Edward",
+        "apellido": "Richtofen",
+        "edad": "32",
+        "especialidad": "fisica"
+    },
+    {
+        "id": "92374",
+        "nombre": "David",
+        "apellido": "Del Toro",
+        "edad": "20",
+        "especialidad": "todo"
     }
 ]

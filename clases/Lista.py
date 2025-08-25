@@ -40,9 +40,11 @@ class Lista:
 
     def agregar(self, data):
         if self.es_lista:
-            self.mostrar_uno(data.id)
-            if self.mostrar_uno(data.id):
+            item_existente = self.mostrar_uno(data.id)
+            if item_existente:
+                print(f"El item con ID {data.id} ya existe.")
                 return False
+            
             self.lista.append(data)
             print(f"Agregado guayabo: {data}")
             self.session.exportar(self.__class__.__name__.lower(), data.convertir_a_diccionario())

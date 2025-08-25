@@ -1,16 +1,14 @@
 from clases.Lista import Lista
 import inspect
-# from db.session import MongoSession
+from db.session import MongoSession
 
 class InterfaceUI:
     def __init__(self):
         self.data = Lista()
-        # self.session = MongoSession()
+        self.session = MongoSession()
 
 
     def crear(self):
-
-        
         atributos = list(inspect.signature(self.data.__class__.__init__).parameters.keys())
         atributos.remove('self')
         print(atributos)
@@ -18,7 +16,7 @@ class InterfaceUI:
         for atributo in atributos:
             valor = input(f"Ingresa el {atributo}: ")
             datos[atributo] = valor
-
+    
         nuevo = self.data.__class__(**datos)
         se_agrego = self.data.agregar(nuevo)
         if not se_agrego:
@@ -26,13 +24,21 @@ class InterfaceUI:
             return None
         else:
             print(f"registro {nuevo.nombre} creado y guardado.")
-            if not self.data.ruta:
-                # Asigna la ruta si no está definida
+            
+            # ✅ FIX: Only export to MongoDB for individual items
+            # Export individual item to MongoDB
+            if hasattr(nuevo, 'convertir_a_diccionario'):
+                self.data.session.exportar(self.data.__class__.__name__.lower(), nuevo.convertir_a_diccionario())
+            
+            # Set route and export to JSON
+            if not hasattr(self.data, 'ruta') or not self.data.ruta:
                 if self.data.__class__.__name__.lower() == "maestro":
                     self.data.ruta = "registros/maestros.json"
                 elif self.data.__class__.__name__.lower() == "alumno":
                     self.data.ruta = "registros/alumnos.json"
-                # Agrega más casos si tienes otras listas
+                elif self.data.__class__.__name__.lower() == "grupo":
+                    self.data.ruta = "registros/grupos.json"
+            
             self.data.exportar()
             return nuevo
 

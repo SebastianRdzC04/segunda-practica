@@ -13,8 +13,8 @@ class InterfaceUIGrupo:
         else:
             self.grupos = Grupo()
             self.grupos.importar("registros/grupos.json")
-            self.grupos_offline = Grupo()
-            self.grupos_offline.importar("offline/grupos.json")
+            # self.grupos_offline = Grupo()
+            # self.grupos_offline.importar("offline/grupos.json")
         self.interfaceMaestro = InterfaceUIMaestro()
     
     def crear(self):
@@ -30,11 +30,10 @@ class InterfaceUIGrupo:
             grupo.Maestro = maestro
         else:
             print("No se agrego Maestro al grupo")
-
+    
         print("Agregar Alumnos al grupo")
         input_alumno = input("Si o no? si/no: ")
         if input_alumno.lower() == "si":
-            # ✅ INICIALIZAR correctamente
             grupo.Alumnos = Alumno()
             grupo.Alumnos.es_lista = True
             
@@ -44,7 +43,6 @@ class InterfaceUIGrupo:
                 
                 if alumno:
                     print(f"ALUMNO AGREGADO: {alumno}")
-                    # ✅ USAR el método del grupo - automáticamente extrae la calificación
                     grupo.agregar_alumno(alumno)
                     print(f"Calificaciones del grupo {grupo.Nombre}: {grupo.Calificaciones}")
                 
@@ -62,6 +60,12 @@ class InterfaceUIGrupo:
             return None
         else:
             print(f"Grupo {grupo.Nombre} creado y guardado.")
+            
+            # ✅ FIX: Export individual group to MongoDB
+            if hasattr(grupo, 'convertir_a_diccionario'):
+                self.grupos.session.exportar("grupo", grupo.convertir_a_diccionario())
+            
+            # Export all groups to JSON
             self.grupos.exportar()
             return grupo
         
